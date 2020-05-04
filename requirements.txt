@@ -1,0 +1,7 @@
+pytest==5.2.2
+pytest-cov==2.8.1
+PyHamcrest==1.9.0
+pytest-watch==4.2.0
+pytest-testmon==0.9.19
+pytest-mock==1.11.2
+mock==3.0.5
