@@ -1,4 +1,15 @@
-def maxMin(k, arr, mn=float("inf"), mx=float("-inf")):
+def maxMin(k, arr):
+    arr.sort()
+    mn = float("inf")
+    delta = k-1
+    for i in range(len(arr)-k+1):
+        mn = min(arr[i+delta]-arr[i], mn)
+    return mn
+
+
+
+
+def maxMinRecursive(k, arr, mn=float("inf"), mx=float("-inf")):
     if k == 0:
         return mx-mn
     elif k>len(arr):
